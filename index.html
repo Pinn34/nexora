@@ -28,25 +28,28 @@
 
   <main>
     <section id="tools" class="tab active">
-      <button onclick="alert('TikTok Downloader')">TikTok Downloader</button>
-      <button onclick="alert('Instagram Downloader')">IG Downloader</button>
-      <button onclick="alert('Video to MP3')">Video → MP3</button>
-      <button onclick="alert('QR Generator')">QR Generator</button>
+      <button onclick="tiktokDownloader()">TikTok Downloader</button>
+      <button onclick="igDownloader()">Instagram Downloader</button>
+      <button onclick="videoToMp3()">Video → MP3</button>
+      <button onclick="qrGenerator()">QR Generator</button>
     </section>
 
     <section id="ai" class="tab">
-      <textarea placeholder="Ask AI..."></textarea>
-      <button>Send</button>
+      <textarea id="aiInput" placeholder="Ask AI..."></textarea>
+      <button onclick="sendAI()">Send</button>
+      <pre id="aiResult"></pre>
     </section>
 
     <section id="settings" class="tab">
-      <p>Version 1.0</p>
-      <p>NEXORA AI TOOLS</p>
+      <p><b>NEXORA AI TOOLS</b></p>
+      <p>Version: 1.0</p>
+      <p>Multi Language: ID / EN / 中文</p>
     </section>
   </main>
 </div>
 
 <script src="js/i18n.js"></script>
+<script src="js/tools.js"></script>
 <script src="js/app.js"></script>
 </body>
-</html>
+        </html>
