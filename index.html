@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NEXORA AI TOOLS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="splash">NEXORA AI TOOLS</div>
+
+<div id="app" class="hidden">
+  <header>
+    <h1 id="appTitle">NEXORA AI TOOLS</h1>
+    <select id="langSelect">
+      <option value="id">ID</option>
+      <option value="en">EN</option>
+      <option value="zh">中文</option>
+    </select>
+  </header>
+
+  <nav>
+    <button onclick="showTab('tools')">🧰 Tools</button>
+    <button onclick="showTab('ai')">🤖 AI</button>
+    <button onclick="showTab('settings')">⚙️</button>
+  </nav>
+
+  <main>
+    <section id="tools" class="tab active">
+      <button onclick="alert('TikTok Downloader')">TikTok Downloader</button>
+      <button onclick="alert('Instagram Downloader')">IG Downloader</button>
+      <button onclick="alert('Video to MP3')">Video → MP3</button>
+      <button onclick="alert('QR Generator')">QR Generator</button>
+    </section>
+
+    <section id="ai" class="tab">
+      <textarea placeholder="Ask AI..."></textarea>
+      <button>Send</button>
+    </section>
+
+    <section id="settings" class="tab">
+      <p>Version 1.0</p>
+      <p>NEXORA AI TOOLS</p>
+    </section>
+  </main>
+</div>
+
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
